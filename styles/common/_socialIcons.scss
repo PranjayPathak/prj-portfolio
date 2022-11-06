@@ -1,0 +1,44 @@
+.social-icons {
+  // position: sticky;
+  // position: -webkit-sticky;
+  // display: flex;
+  // flex-direction: column;
+  // top: calc(100vh - 13rem);
+  padding: 0 0.5rem;
+  color: $font-light; //$background-secondary;// $font-color-white;
+  // opacity: $opacity-secondary;
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0.4rem;
+  z-index: 1000;
+  // width: 0px;
+  // height: 0px;
+
+  // &__icon {
+  //   height: 2rem;
+  //   // padding: 0.5rem;
+  //   // display: block;
+  // }
+
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+
+.social-icons__icon {
+  height: 3.28rem;
+  width: auto;
+  // width: 3rem;
+  margin-top: 0.4rem;
+  // background-color: $background-secondary;
+  color: $font-color-off-white;
+  opacity: 0.15;
+  transition: transform $timer1 ease-in-out, opacity $timer1 ease-in-out;
+  transform-origin: bottom left;
+
+  &:hover {
+    transform: scale(1.17);
+    opacity: 0.45;
+  }
+
+}

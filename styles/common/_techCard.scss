@@ -1,0 +1,150 @@
+.wrapper {
+  display: inline-block;
+  margin: 2.5rem;
+
+  @include respond(tab-port) {
+    margin: 1.5rem;
+  }
+
+  @include respond(phone) {
+    margin: 0.9rem;
+  }
+
+}
+
+
+.tiles-card {
+  width: 13rem;
+  height: 13rem;
+  color: $font-color-white;
+  background: $background-secondary;
+  overflow: hidden;
+  position: relative;
+  // box-shadow: 0 0px 26px rgba(0, 0, 0, 0.09);
+  border-radius: $border-rad2;
+  @include respond(phone) {
+  border-radius: 10rem;
+  }
+  transition: all $timer2 ease-out;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(tab-port) {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  @include respond(phone) {
+    border-radius: 10rem;
+  }
+
+  // @include respond(phone) {
+  //   width: 10rem;
+  //   height: 10rem;
+  // }
+}
+
+.tiles-overlay {
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  border-radius: 50%;
+  background: $background-primary;
+  margin: auto;
+  z-index: 0;
+  transition: transform $timer2 ease-out;
+}
+
+.tiles-circle {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  // background: $font-color-off-white;
+  border: $border2 solid $background-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all $timer3 ease-out;
+  margin: auto;
+}
+
+.tiles-circle::after {
+  content: "";
+  width: 8.5rem;
+  height: 8.5rem;
+  display: block;
+  position: absolute;
+  background: $background-primary;
+  border-radius: 50%;
+  transition: opacity $timer2 ease-out;
+}
+
+.tiles-circle img {
+  border-radius: 3px;
+  //   height: 4rem;
+  //   margin-top: 0.5rem;
+  z-index: 100;
+  transform: scale(1) translateZ(0) rotateY(0deg);
+  transition: all $timer2 ease-out;
+  position: static;
+
+  @include respond(tab-port) {
+    transform: scale(0.9) translateZ(0) rotateY(0deg);
+  }
+
+  @include respond(phone) {
+    transform: scale(0.7) translateZ(0) rotateY(0deg);
+  }
+}
+
+.tiles-circle p {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0) translateZ(0) rotateY(180deg);
+  transition: all $timer2 ease-out;
+  position: absolute;
+  z-index: 100;
+  cursor: default;
+  // padding: 2px;
+  // border-radius: 3px;
+  // background: $background-secondary;
+}
+
+.tiles-card:hover {
+  // transform: scale(1.005) translateZ(0);
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 0px 36px rgba(0, 0, 0, 0.11);
+
+  .tiles-overlay {
+    transform: scale(4) translateZ(0);
+    // background-color: $font-color-blue; //;
+  }
+
+  .tiles-circle {
+    border-color: $font-color-blue; //$background-secondary;
+    background: $background-primary;
+  }
+
+  .tiles-circle::after {
+    background: $background-secondary; //$font-color-blue;//
+  }
+
+  .tiles-circle img {
+    opacity: 0;
+    transform: scale(0) translateZ(0) rotateY(180deg);
+    // position: absolute;
+
+
+  }
+
+  .tiles-circle p {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateZ(0) rotateY(0deg);
+    //   position: static;
+  }
+}
