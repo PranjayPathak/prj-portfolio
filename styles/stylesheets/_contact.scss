@@ -1,0 +1,197 @@
+.contact {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //margin: 0 8rem;
+    // padding: 7rem 5rem;
+
+    &__heading {
+        color: $font-color-white;
+        margin-right: auto;
+        padding-bottom: 0;
+    }
+
+    &__wrapper {
+        padding:6rem 5rem;
+        width: 100%;
+        position: relative;
+        border-radius: $border-rad1;
+
+        $border-width: 0.5rem;
+        $corner-width: 4rem;
+        border: $border-width solid currentColor;
+        color: $font-color-blue;
+        z-index: 1;
+
+        @include respond(phone) {
+            // padding: 3rem;
+            padding: 0rem;
+            border: none;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            background: $background-primary;
+            z-index: -1;
+        }
+
+        //the 101% is because of a pixel rounding issue in firefox
+        &::before {
+            width: calc(100% - #{$corner-width});
+            height: calc(105% + #{$border-width * 2});
+            top: -$border-width - 0.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            height: calc(100% - #{$corner-width});
+            width: calc(101% + #{$border-width * 2});
+            left: -$border-width - 0.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+
+    //Input Form
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        justify-content: space-between;
+        gap: 3.5rem;
+        // margin-top: 2rem;
+        caret-color: $font-color-blue;
+        // color: $font-light;
+        color: $font-color-grey;
+        max-width: 100rem;
+        padding: 0 2rem;
+        margin: 0rem auto;
+
+        @include respond(phone) {
+            padding: 0rem; 
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 10rem;
+        }
+
+        &__input_container {
+            position: relative;
+            width: 100%;
+            // height: 3rem;
+            // margin-bottom: 10rem;
+
+            &:first-child {
+                max-width: 33.33%;
+            }
+        }
+
+        &__input {
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+
+            width: 100%;
+            padding: 1.5rem 2rem;
+            background: none;
+            font-family: inherit;
+            font-size: inherit;
+            color: $font-light;
+            border: $border1 solid $font-color-grey;
+            border-radius: $border-rad1;
+            z-index: 5; // Greater then label
+            box-shadow:
+                // 0px 4px 4px rgba(0, 0, 0, 0.3),
+                inset 0px 0px 0px 0px $font-color-blue;
+            transition: box-shadow $timer1 ease-in;
+            transition: outline $timer1 ease-in;
+            outline: none;
+
+            &:focus,
+            &:not(:placeholder-shown).form__input:not(:focus) {
+                // outline: 1px solid lighten($font-color-white, 5);
+                transition: box-shadow $timer1 ease-in;
+                -webkit-box-shadow: inset 0px -2px 0px 0px $font-color-blue;//, 0px 4px 4px rgba(0, 0, 0, 0.3);
+                -moz-box-shadow: inset 4px 0px 0px 0px $font-color-blue;//, 0px 4px 4px rgba(0, 0, 0, 0.3);
+                box-shadow:
+                    // 0px 4px 4px rgba(0, 0, 0, 0.3),
+                    inset 5px 0px 0px 0px $font-color-blue,;
+            }
+        }
+
+        .double-input {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        &__label {
+            position: absolute;
+            top: 2rem; // 1.9rem;
+            left: 2.2rem;
+            padding: 0;
+            opacity: 0.9;
+            color: $font-color-white;
+            cursor: text;
+            z-index: 4;
+
+            transition-property: top, opacity, left, font;
+            transition-duration: $timer1;
+            transition-timing-function: ease-in;
+        }
+
+        .form__input:focus~.form__label,
+        .form__input:not(:placeholder-shown).form__input:not(:focus)~.form__label {
+            top: -2.4rem;
+            left: 0;
+            cursor: default;
+            // z-index: 6;
+            // top: -1rem;
+            // left: 1.5rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            opacity: 1;
+        }
+
+        &__btn {
+            background-color: $font-color-blue;
+            // background-color: transparent;
+            // color: $font-light;
+            padding: 1.5rem 2rem;
+            border: $border2 solid $background-primary;
+            box-shadow: 0 0 0 $border1 $font-color-blue, inset 0px 0px 7px 0px darken($color: $font-color-blue, $amount: 25%);
+            font-weight: 600;
+            // margin-top: 1rem;
+            cursor: pointer;
+            color: $background-primary;
+            border-radius: $border-rad1;
+            width: 33.33%;
+            margin-left: auto;
+            margin-right: $border1;
+
+            @include respond(phone) {
+                width: 45%;
+            }
+
+            &:hover {
+                box-shadow: 0 0 0 0.3rem $font-color-blue, inset 0px 0px 6px 2px darken($color: $font-color-blue, $amount: 25%);
+            }
+
+            &:active {
+                transform: scale(0.98);
+                // border: $border2 solid $background-primary;
+                // background: darken($color: $font-color-white, $amount: 3%);
+            }
+        }
+
+
+    }
+}
