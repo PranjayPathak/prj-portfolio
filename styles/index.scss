@@ -1,8 +1,23 @@
+@import 'variable';
 @import 'mixin';
 @import 'base';
-@import 'variable';
 @import 'typography';
+
+
+@import 'common/cornerButton';
+@import 'common/techCard';
+@import 'common/projectCard';
+@import 'common/socialIcons';
+@import 'common/stickyMail';
 
 @import 'stylesheets/home';
 
-
+@import 'stylesheets/header';
+@import 'stylesheets/hero';
+@import 'stylesheets/about';
+@import 'stylesheets/skills';
+@import 'stylesheets/experience';
+@import 'stylesheets/projects';
+@import 'stylesheets/contact';
+@import 'stylesheets/footer';
+@import 'stylesheets/404'; 
