@@ -14,6 +14,8 @@
   }
 
   html {
+    // cursor:none;
+    scroll-behavior: smooth;
     // This defines what 1rem is
     font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5% (default browser font size is 16px)
 
@@ -30,4 +32,52 @@
     @include respond(big-desktop) {
       font-size: 75%; //1rem = 12, 12/16
     }
+  }
+
+  ::selection {
+    background-color: $font-color-blue;
+    color:  $background-primary;//$font-color-off-white;//
+  }
+
+  /* Scrollbar */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: $font-color-blue $background-secondary;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: $background-secondary;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: $font-color-blue ;
+    // border-radius: $border-rad1;
+    // border: 3px none #ffffff;
+  }
+
+  .container {
+    margin: 0 8rem;
+    padding: 7rem 5rem;
+    // transition: margin $timer2 ease-in-out;
+
+    @include respond(tab-port) {
+      margin: 0 4rem;
+    }
+
+    @include respond(phone) {
+      margin: 0 0.5rem;
+      padding: 7rem 4rem;
+    }
+
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
