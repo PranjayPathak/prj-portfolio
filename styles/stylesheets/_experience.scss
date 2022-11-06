@@ -1,0 +1,205 @@
+.workexp {
+
+  /* Variables */
+  $spacing: 5rem;
+  $spacing-mob: 3rem;
+  $date: 12rem;
+  $dot: 1rem;
+
+  min-height: 100vh;
+
+  a {
+    color: $font-color-blue;
+    padding-bottom: 0.1rem;
+    border-bottom: .2rem solid transparent;
+    transition: border calc($timer1/2) linear;
+  }
+
+  a:hover {
+    // color: lighten($font-color-blue, 5%);
+
+    // background: ;
+    border-bottom: .2rem solid $font-color-blue;
+  }
+
+  strong {
+    // font-weight: 400;
+    font-weight: inherit;
+    color: lighten($color: $font-color-grey, $amount: 20);
+  }
+
+  /* Timeline */
+
+  .timeline {
+    border-left: $border2 solid $font-color-blue;
+    border-bottom-right-radius: $border-rad2;
+    border-top-right-radius: $border-rad2;
+    background: $background-secondary;
+    color: rgba(white, 80%);
+    //   font-family: $font-text;  
+    margin: 4rem auto; //$spacing auto;
+    // letter-spacing: 0.5px;
+    position: relative;
+    // line-height: 1.4em;
+    // font-size: 1.03em;
+    padding: $spacing;
+    list-style: none;
+    text-align: left;
+    // font-weight: 100;
+    // max-width: 30%;
+
+    @include respond(phone) {
+      padding: $spacing $spacing-mob;
+    }
+
+    .event {
+      border-bottom: 3.5px solid rgba($background-primary, 40%);
+      padding-bottom: $spacing;
+      margin-bottom: $spacing;
+      position: relative;
+
+      &:last-of-type {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+      }
+
+      &:before,
+      &:after {
+        position: absolute;
+        display: block;
+        top: 0;
+      }
+
+      &:before {
+        // left: ((($date * 0.6) + $spacing + $border2 + $dot + ($border2 * 2)) * 1.5) * -1;
+        right: 0;
+        color: rgba($font-color-grey, 60%);
+        content: attr(data-date);
+        text-align: right;
+        font-size: 0.9em;
+        min-width: $date;
+        //   font-family: $font-title;
+        top: 2.3rem;
+        font-weight: 200;
+        letter-spacing: 3px;
+
+        @include respond(tab-port) {
+          top: -3rem;
+          right: 50%;
+          transform: translateX(50%);
+          white-space: nowrap;
+        }
+      }
+
+      &:after {
+        box-shadow: 0 0 0 $border2 $font-color-blue;
+        left: ($spacing + $border2 + ($dot * 0.29)) * -1;
+        background: #252827; //        $background-secondary;
+        border-radius: 7rem;
+        height: $dot;
+        width: $dot;
+        content: "";
+        top: 2.5rem; //5px;
+
+        @include respond(phone) {
+          left: ($spacing-mob + $border2 + ($dot * 0.29)) * -1;
+          // padding: $spacing $spacing-mob;
+        }
+
+      }
+
+
+      .heading {
+        display: flex;
+        align-items: center;
+        align-content: stretch;
+        justify-content: flex-start;
+        // transform: translateY(-25%);
+        flex-wrap: wrap;
+        max-width: 70%;
+        // margin-bottom: 0.5rem;
+
+        .position {
+          margin-right: 1rem;
+          margin-left: 0.1rem;
+          font-size: 3.4rem;
+          font-weight: 500;
+          // white-space: nowrap;
+          color: $font-light;
+        }
+
+        .at {
+          font-size: 4.2rem;
+          font-weight: 300;
+          margin: 0 1rem 0.6rem 0rem;
+          color: $font-light;
+        }
+
+        .company {
+          display: flex;
+          align-items: center;
+          align-content: stretch;
+          justify-content: flex-start;
+
+          &__logo-container {
+            position: relative;
+            width: 4.3rem;
+            height: 3.2rem;
+            margin-right: 0.5rem;
+
+          }
+
+          &__name {
+            font-size: 4rem;
+            font-weight: 500;
+          }
+        }
+
+      }
+
+      &__list {
+        list-style: disc outside none;
+        max-width: 85%;
+        margin-left: 2.5rem;
+        color: $font-color-grey;
+        // color: rgba($font-color-grey, 90%);
+
+        @include respond(tab-port) {
+          max-width: 100%;
+          // text-align: justify;
+        }
+
+        &__item {
+          margin: 0.6rem 0;
+          // line-height: 3.3rem;
+          margin-bottom: 1.3rem;
+          // font-size: 2.1rem;
+        }
+
+        .technologies {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: center;
+          position: relative;
+          flex-wrap: wrap;
+          top: -0.2rem;//-1.075rem;
+          margin-top: 2rem;
+          // margin-left: $spacing;
+
+          .tech {
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            padding: 0rem 1rem;
+            color: $font-color-grey;
+            background-color: $background-secondary;
+            font-weight: 300;
+            letter-spacing: 2.3px;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
