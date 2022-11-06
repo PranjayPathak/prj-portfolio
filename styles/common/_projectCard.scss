@@ -1,12 +1,6 @@
-.description {
-    $background: #252827;
-    $color-primary: $font-color-blue ; //#004ffc;
-    $color-light: white;
-    $color-dim: #6c6d6d;
-    $spacing: 2rem;
-    $radius: $border-rad2; //0.25rem;
-    $date: 12rem;
-    $dotborder: $border1;
+.description { 
+    $spacing: 2rem; 
+    $date: 12rem; 
     $dot: 0.8rem;
     $line: 0.25rem;
     $shift: 10px;
@@ -32,7 +26,7 @@
         margin: $spacing 0 0 $spacing;
 
         .point {
-            border-left: $line solid $color-primary;
+            border-left: $line solid $font-color-blue;
             position: relative;
             list-style: none;
             text-align: left;
@@ -61,10 +55,10 @@
             }
 
             &:after {
-                box-shadow: 0 0 0 $dotborder $font-color-blue;
+                box-shadow: 0 0 0 $border1 $font-color-blue;
                 // left: calc(($spacing + $line + ($dot * 0.35)) * -1);
                 left: calc(($line + ($dot * 0.35)) * -1);
-                background: $background-primary; //lighten($background, 5%);
+                background: $background-primary; //lighten($background-primary, 5%);
                 border-radius: 50px;
                 height: $dot;
                 width: $dot;
