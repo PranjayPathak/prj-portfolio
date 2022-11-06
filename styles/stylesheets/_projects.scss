@@ -1,0 +1,122 @@
+.projects {
+    //margin: 0 8rem;
+    // padding: 7rem 5rem;
+    min-height: 100vh;
+
+    /* Variables */
+    $background: #55ac8f;
+    $color-light: white;
+    $color-dim: #6c6d6d;
+    $spacing: 5rem;
+    $radius: $border-rad2; //0.25rem;
+    $cardPadding : 5rem;
+    $date: 12rem;
+    $dot: 1rem;
+    $line: 0.25rem;
+
+    /* projects-wrapper */
+    .projects-wrapper {
+        color: rgba(white, 80%);
+        margin: $spacing auto;
+        position: relative;
+        list-style: none;
+        text-align: left;
+
+        .project-card {
+            display: flex;
+            justify-content: space-between;
+            padding: 2.7rem 0;
+            align-items: center;
+            position: relative;
+            min-height: 40rem;
+
+            @include respond(tab-port) {
+                flex-direction: column-reverse;
+                padding: 4rem 0;
+            }
+
+            &:before,
+            &:after {
+                z-index: 0;
+                content: "";
+                position: absolute;
+                display: block;
+                top: 0;
+                // opacity: 0.9;
+            }
+
+            &:nth-of-type(odd) {
+                padding-left: $cardPadding;
+
+                @include respond(phone) {
+                    padding-left: 2rem;
+                }
+
+                &::before {
+                    left: 0;
+                    border: $line solid$font-color-blue;
+                    border-right: none;
+
+                    border-top-left-radius: $border-rad2;
+                    border-bottom-left-radius: $border-rad2;
+                    width: 55%;
+                    height: calc(100% + $line);
+                }
+            }
+
+            &:nth-of-type(even) {
+                flex-direction: row-reverse;
+                padding-right: $cardPadding;
+
+                @include respond(phone) {
+                    padding-right: 2rem;
+                }
+
+                &::after {
+                    // content: "";
+                    right: 0;
+                    border: $line solid$font-color-blue;
+                    border-left: none;
+                    border-top-right-radius: $border-rad2;
+                    border-bottom-right-radius: $border-rad2;
+                    // background-color: blue;
+                    width: 55%;
+                    height: calc(100% + $line);
+                }
+
+                @include respond(tab-port) {
+                    flex-direction: column-reverse;
+                }
+            }
+
+            &:last-of-type {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    right: 0;
+                    top: 0;
+                    border-bottom: $line solid $font-color-blue;
+                    width: 50%;
+                    height: calc(100% + $line);
+                }
+            }
+
+            &:first-of-type {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    right: 0;
+                    top: 0;
+                    border-top: $line solid $font-color-blue;
+                    width: 50%;
+                    height: calc(100% + $line);
+                }
+            }
+
+            // &:nth-of-type(2n) {
+            // }
+        }
+    }
+}
