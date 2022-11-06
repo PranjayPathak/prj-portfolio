@@ -63,7 +63,7 @@ function Experience({ }: Props) {
                                             {/* &#64; */}
                                             |
                                         </span>
-                                        <span className='company__logo-container'><Image src={`/images/${exp.logo}`} height={39} width={52} /></span>
+                                        <span className='company__logo-container'><Image src={`/images/${exp.logo}`} height={39} width={52} alt='logo'/></span>
                                         <span className='company__name'>{exp.company}</span>
                                     </div>
                                 </div>
