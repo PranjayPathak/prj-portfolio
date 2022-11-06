@@ -1,5 +1,5 @@
 :root {
-    --blue-shade: #5B4AF4;//lighten(#503dfef4, 3); // #503dfef4; //#017BFE;// rgb(98, 0, 238); //
+    --blue-shade: #5600E8;//#5B4AF4;//lighten(#503dfef4, 3); // #503dfef4; //#017BFE;// rgb(98, 0, 238); //
 }
 
 // Font size
@@ -27,7 +27,7 @@ $background-primary: #202020;
 $background-secondary:#ffffff08; //rgba(255, 255, 255, 0.8);//#050505;
 
 $font-light: rgba(#fff, 92%);
-$font-color-blue: lighten(#503dfef4, 3); // #503dfef4; //#017BFE;// rgb(98, 0, 238); //
+$font-color-blue: #5600E8;//lighten(#503dfef4, 3); // #503dfef4; //#017BFE;// rgb(98, 0, 238); //
 $font-color-white: #fff; //#fff4d6;
 $font-color-off-white: #faf0d4fe; //rgba(white, 80%); //#fff4d6;
 $font-color-grey: darken($color: $font-color-white, $amount: 50); // #6c6d6d;//hsla(220, 7%, 57%, 0.781);//hsla(220, 9%, 46%, 0.9);

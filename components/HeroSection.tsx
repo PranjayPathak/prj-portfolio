@@ -65,7 +65,10 @@ function HeroSection({ }: Props) {
             {/* <span style={selectedStyle.current} ref={notFocusedRef}>{typewriterText}</span> */}
 
             {typewriterText}
-            <Cursor cursorStyle="_" cursorColor="#5B4AF4" />
+            <Cursor 
+            cursorStyle="_" 
+            cursorColor="#5600E8"//5B4AF4" 
+            />
           </h3>
         </div>
 
