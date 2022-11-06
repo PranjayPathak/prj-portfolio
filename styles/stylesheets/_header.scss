@@ -1,0 +1,45 @@
+.top-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    padding-right: 0;
+    height: $navbar-height;
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        // padding: 1rem;
+
+        &__item {
+            cursor: pointer;
+            // margin-right: 1.5rem;
+        }
+
+        .contact-link {
+            // text-transform: capitalize;
+            color: $font-color-blue;
+            border: $border1 solid $font-color-blue;
+            font-weight: 300;
+            padding: 0.5rem 1rem;
+            // padding-right: 1.1rem;
+            border-right: none;
+            transform-origin: right;
+            // border-top-left-radius: $border-rad1;
+            // border-bottom-left-radius: $border-rad1;
+            transition: padding $timer1 ease;
+
+            &:hover {
+                padding-right: 1.2rem;
+            }
+            &:active {
+                transition-duration: 0;
+                // transform: scaleX(1.02);
+                padding-right: 1.65rem;
+            }
+        }
+    }
+}
