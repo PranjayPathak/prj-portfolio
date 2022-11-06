@@ -67,7 +67,7 @@ function HeroSection({ }: Props) {
             {typewriterText}
             <Cursor 
             cursorStyle="_" 
-            cursorColor="#5600E8"//5B4AF4" 
+            cursorColor="#2666CF"//5B4AF4" 
             />
           </h3>
         </div>
