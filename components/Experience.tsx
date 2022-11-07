@@ -31,7 +31,7 @@ function Experience({ }: Props) {
             logoColor: '#7B3FE4',
             dates: 'March 2022 - Aug 2022', 
             work: [<>Developed the new <a href='https://staking.polygon.technology/' target="_blank" rel="noopener noreferrer">Staking UI</a> used by all the Validators and Delegators on Matic Network. (<strong>Reducing the initial page load time from 12s to 1.05s, ~90% reduction</strong>).</>, <>Refactored the Staking UI and <a href='https://wallet.polygon.technology/' target="_blank" rel="noopener noreferrer"> Wallet v3</a> for handling assets and amount with higher accuracy and improved the overall user experience</>
-            ,<>Refactored the <strong>Gas-swap</strong> and <strong>Token-swap</strong>in the new Wallet v3 and developed the login flow for Burn UI by integrating multiple wallets.</>],
+            ,<>Refactored <strong>Gas-swap</strong> and <strong>Token-swap</strong> in the new Wallet v3 and developed the login flow for Burn UI by integrating multiple wallets.</>],
             workedWith: ['Vue.js', 'Vuex', 'Web3.js', 'Typescript', 'SCSS']
         }
         ,

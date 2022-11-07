@@ -35,10 +35,6 @@
         background-color: $font-color-blue;
         color: $background-primary; 
       }
-
-      span {
-        color: red;
-      }
     }
 
     // .select {
@@ -119,7 +115,7 @@
   width: 100%;
   height: 100%;
   border-width: 1px;
-  border-color: #4f3dfe; // rgba(9, 56, 62, 0.1);
+  border-color: $font-color-blue; // rgba(9, 56, 62, 0.1);
   animation: ellipsesOrbit 15s ease-in-out infinite;
   z-index: 6;
 }
