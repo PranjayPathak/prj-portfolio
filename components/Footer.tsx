@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from './common/Logo'
+import constant from "../constants"
 import { IconContext } from "react-icons";
 import { BiCoffee } from "react-icons/bi";
 import { GiTechnoHeart } from "react-icons/gi";
@@ -39,7 +40,7 @@ function Footer({ }: Props) {
                         <IconContext.Provider value={{ className: "li-icon" }}>
                             <ul>
                                 <li><a  target="_blank" rel="noopener noreferrer" href='https://github.com/PranjayPathak/prj-portfolio'><CgCodeSlash /> Website repo</a></li>
-                                <li><a  target="_blank" rel="noopener noreferrer" href='#'><CgFileDocument /> View resume</a></li>
+                                <li><a  target="_blank" rel="noopener noreferrer" href={constant.RESUME_LINK}><CgFileDocument /> View resume</a></li>
                                 <li><a href='#'><CgArrowUpR /> Back to top</a></li>
                             </ul>
                         </IconContext.Provider>

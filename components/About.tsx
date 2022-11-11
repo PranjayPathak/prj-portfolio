@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import CornerButton from "./common/CornerButton";
 import HeadingHighlight from "./common/HeadingHighlight";
+import constant from "../constants"
 
 type Props = {};
 
@@ -19,19 +20,17 @@ function AboutSection({ }: Props) {
         <div className="about__content">
           <div>
             <p className="about__content__text para para-1">
-              Hi I am <span className="highlight">Pranjay Pathak</span> , a 21
-              year old <span className="highlight">web developer</span> from
-              India. I am a Software Engineer graduated in 2022, currently looking for an awesome
-              team and workplace.
+              Hi I am <span className="highlight">Pranjay Pathak</span> , a 22 year old <span className="highlight">web developer</span> from
+              India. I am a Software Engineer graduated in 2022, currently looking for an awesome team and workplace.
               <br />
-              Do have a look at my projects, skills or just connect with me on
-              LinkedIn. I am always excited to do business with like minded
-              people.
+              Do have a look at my projects, skills or just connect with me on LinkedIn. I am always excited to do business with like mind people.
             </p>
-            <CornerButton>Get My Resume</CornerButton>
+            <a target="_blank" rel="noopener noreferrer" href={constant.RESUME_LINK}>
+              <CornerButton>Get My Resume</CornerButton>
+            </a>
           </div>
           <div className="about__content__image-wrapper">
-            <Image className="profile-img" src="/images/prj4.jpeg" alt="pranjay" layout="fill"/>
+            <Image className="profile-img" src="/images/prj4.jpeg" alt="pranjay" layout="fill" />
           </div>
         </div>
       </div>

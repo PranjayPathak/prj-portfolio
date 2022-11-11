@@ -20,7 +20,7 @@ const projectInfo = [
             "proj3-b.png",
             "proj3-c.png",
         ],
-        technologies: ['React.js', 'Sockets', 'Node.js', 'SCSS']
+        technologies: ['React.js', 'Socket.io', 'Node.js', 'SCSS']
     }, {
         id: 2,
         name: "Prj.Porfolio",
@@ -37,13 +37,13 @@ const projectInfo = [
             "proj2-b.png",
             "proj2-a.png",
         ],
-        technologies: ['Next.js', 'Typescript', 'SCSS', 'Framer Motion']
+        technologies: ['Next.js', 'TypeScript', 'SCSS', 'Framer Motion']
     }, {
         id: 1,
         name: "Sudoku Game & Solver",
         description: [
             'Sudoku web application/game developed with its solution visualizer implemented using backtracking algorithm.',
-            'The game uses cookies to store the game status and its playable on any device having a browser.',
+            "The game uses cookies to store the game status and it's playable on any device having a browser.",
 
         ],
         github: "https://github.com/PranjayPathak/SUDOKUprj",
