@@ -169,7 +169,8 @@
 
     .composition__photo {
         width: 55%;
-        box-shadow: 0 1.5rem 4rem rgba(10, 10, 10, 0.4);
+        // box-shadow: 0 1.5rem 4rem rgba(10, 10, 10, 0.4);
+        box-shadow: 0 0 2rem rgba(10, 10, 10, 0.4);
         border-radius: $border-rad1;
         position: absolute;
         z-index: 10;
@@ -237,7 +238,7 @@
     }
 
     .composition__photo:hover {
-        outline: $border2 solid $font-color-blue;
+        // outline: $border2 solid $font-color-blue;
         transform: scale(1.2) translateY(-0.5rem);
         // box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
         z-index: 200;

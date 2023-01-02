@@ -56,7 +56,7 @@ function HeroSection({ }: Props) {
       <div className="hero-section">
         <div className="hero-section__text-wrapper">
           {/* <h3 id="highlightl" className="label-1">Hey, my name is</h3> */}
-          <input readOnly ref={selectText} type='text' id="selected" className="selected-text label-1" value={'Hey, my name is'} />
+          <input readOnly ref={selectText} type='text' id="selected" className="selected-text label-1" value={'Hello, my name is'} />
           <h1 className="headline-1">
             <HeadingHighlight>Pranjay Pathak</HeadingHighlight>
           </h1>

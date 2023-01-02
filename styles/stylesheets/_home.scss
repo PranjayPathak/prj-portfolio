@@ -37,6 +37,7 @@
   justify-content: space-between;
   top: 60vh;
   transform: translateY(-50%);
+  
   a {
     color: $font-color-grey;
   }
@@ -46,6 +47,7 @@
     flex-direction: row;
     justify-content: flex-start;
     margin: 0.5rem 0 1rem 0;
+    padding-bottom: 0.5rem;
     align-items: center;
 
     // opacity: $opacity-secondary;
@@ -55,7 +57,7 @@
 
     
     .bar {
-      width: 0.8rem;
+      width: 0.6rem;
       height: 0.12rem;
       margin-right: 1rem;
       background-color: $font-color-off-white;

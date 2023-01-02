@@ -51,7 +51,8 @@ function Skills({ }: Props) {
             <div className='skills__wrapper'>
                 <div className='text-container para para-1'>
                     <p>
-                    The following skills are part of my toolbox. One of the things I love is learning and exploring new technologies, but with the pace at which we are getting new technologies and frameworks, these are the ones I&#39;ve been working with recently. </p>
+                    The following skills are part of my toolbox. One of the things I like is to explore and learn new technologies, but given the pace at which we are getting new technologies and frameworks, these are some of them that I have mastered and worked with recently.
+                    </p>
                 </div>
                 <div className='skills-container'>{
                     skills.map((skill: { name: String, id: any }) => {

@@ -9,12 +9,14 @@ const projectInfo = [
         id: 3,
         name: "Codeiva: Reatime Editor",
         description: [
-            'Online code editor allows real-time collaboration that Compiles and Executes in 40+ Languages with wide range of themes',
-            'Every code change is streamed in realtime, so that any user in the room can respond instantly.',
-
+            // 'Online code editor allows real-time collaboration that Compiles and Executes in 40+ Languages with wide range of themes',
+            // 'Every code change is streamed in realtime, so that any user in the room can respond instantly.',
+            'Online IDE with real-time collaboration and integrated JudgeO API for compilation.',
+            'Used sockets to connect all the code editors and stream every code change in real-time.',
+            'Having IntelliSense support for 40+ languages and 50+ themes.'
         ],
         github: "https://github.com/PranjayPathak/realtime-editor",
-        url: "https://codeiva.herokuapp.com/",
+        url: "https://codeiva.up.railway.app/",
         image: [
             "proj3-a.png",
             "proj3-b.png",
@@ -23,7 +25,7 @@ const projectInfo = [
         technologies: ['React.js', 'Socket.io', 'Node.js', 'SCSS']
     }, {
         id: 2,
-        name: "Prj.Porfolio",
+        name: "Pranjay.tech",
         description: [
             'The portfolio page you are currently on is developed with a theme in mind but designed on the way as it progressed.',
             // 'The page is completely responsive and it is powered by Next.js and SCSS',
@@ -38,16 +40,18 @@ const projectInfo = [
             "proj2-a.png",
         ],
         technologies: ['Next.js', 'TypeScript', 'SCSS', 'Framer Motion']
-    }, {
+    },
+
+    {
         id: 1,
         name: "Sudoku Game & Solver",
         description: [
             'Sudoku web application/game developed with its solution visualizer implemented using backtracking algorithm.',
-            "The game uses cookies to store the game status and it's playable on any device having a browser.",
+            "The game is fully responsive and can be played on any device that supports a browser.",
 
         ],
         github: "https://github.com/PranjayPathak/SUDOKUprj",
-        url: "http://sudokuprj.herokuapp.com",
+        url: "https://sudoku-prj.up.railway.app/",
         image: [
             "proj1-c.png",
             "proj1-a.png",

@@ -18,7 +18,7 @@ function Footer({ }: Props) {
                         <Logo />
                     </div>
                     <div>
-                        <h3 className='label-1 thanks-message'>Thanks for visiting!</h3>
+                        <h3 className='label-1 thanks-message'>✨ Thanks for visiting!</h3>
                         <div className='footer__credits label-3'>
                             Made with
                             <IconContext.Provider value={{ className: "footer__credits__icon-technoheart" }}>
@@ -46,22 +46,6 @@ function Footer({ }: Props) {
                         </IconContext.Provider>
                     </div>
                 </div>
-                {/* <div className='footer__credits label-3'>
-                    Made with
-                    <IconContext.Provider value={{ className: "footer__credits__icon-technoheart" }}>
-                        <GiTechnoHeart />
-                    </IconContext.Provider> +
-
-                    <IconContext.Provider value={{ className: "footer__credits__icon-coffee" }}>
-                        <BiCoffee />
-                    </IconContext.Provider>
-                    & powered by
-
-                    <IconContext.Provider value={{ className: "footer__credits__icon-nextjs" }}>
-                        <SiNextdotjs />
-                    </IconContext.Provider>
-
-                </div> */}
             </div>
         </div>
     )

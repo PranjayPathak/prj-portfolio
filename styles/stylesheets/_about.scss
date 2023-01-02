@@ -23,7 +23,7 @@
     display: flex;
     position: relative;
     color: $font-color-grey;
-    padding-top: 1rem;
+    padding-top: 3rem;
     // align-items: center;
     // justify-content: flex-start;
     width: 100%;
@@ -31,9 +31,9 @@
 
     // background-color: $font-color-blue;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       flex-direction: column-reverse;
-    } 
+    }
 
     &__image-wrapper {
       position: relative;
@@ -46,14 +46,14 @@
       border-radius: $border-rad2;
       // opacity: 0.4;
       //   height: auto;
-      margin: 1rem 0 0 5rem;
+      margin: 1.5rem 0 0 5rem;
 
       img {
         border-radius: $border-rad2;
         object-fit: cover;
       }
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         border-radius: 90rem;
         margin: 2rem auto;
         margin-bottom: 4rem;
@@ -61,11 +61,18 @@
         img {
           border-radius: 90rem;
         }
-      } 
+      }
     }
 
-    &__text {
-      text-align: justify;
+    // &__text {
+    //   text-align: justify;
+    // }
+
+    strong {
+      // font-weight: 400;
+      font-weight: inherit;
+      color: lighten($color: $font-color-grey, $amount: 30);
     }
   }
+  
 }

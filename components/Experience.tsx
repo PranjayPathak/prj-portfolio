@@ -5,15 +5,6 @@ import HeadingHighlight from './common/HeadingHighlight'
 type Props = {}
 
 function Experience({ }: Props) {
-    //     Polygon Wallet Suite v3: 
-    // - Created Token Assets Page on Wallet v3 end-to-end with Vue3, TypeScript and Vuex. Used by 2.5M people monthly to manage their token assets.
-    // - Developed complete user login with web3Modal to token transfer flow. Currently supporting 5+ wallets.
-    // - Refactored Widget Dashboard and entire App Navigation of Wallet v3, reduced initial page load time from 12s (v2) to 2.5s (v3) (70% reduction).
-
-    // Polygon Quest: 
-    // - Developed Polygon Quest end-to-end for onboarding new users onto the web3 space in the most seamless user experience possible.
-    // - Created twitter flows with TwitterAPI and VueX state management.
-
     // Staking improved performance from old wallet to new staking platform
     // Removed bugs
     // improved overall ux
@@ -29,9 +20,12 @@ function Experience({ }: Props) {
             company: 'Polygon',
             logo: 'polygon.svg',
             logoColor: '#7B3FE4',
-            dates: 'March 2022 - Aug. 2022', 
-            work: [<>Developed the new <a href='https://staking.polygon.technology/' target="_blank" rel="noopener noreferrer">Staking UI</a> used by all the Validators and Delegators on Matic Network. (<strong>Reducing the initial page load time from 12s to 1.05s, ~90% reduction</strong>).</>, <>Refactored the Staking UI and <a href='https://wallet.polygon.technology/' target="_blank" rel="noopener noreferrer"> Wallet v3</a> for handling assets with higher accuracy and improved the overall user experience</>
-            ,<>Refactored <strong>Gas-swap</strong> and <strong>Token-swap</strong> in the new Wallet v3 and developed the login flow for Burn UI by integrating multiple wallets.</>],
+            dates: 'March 2022 - Aug. 2022',
+            work: [
+                <>Developed the new <a href='https://staking.polygon.technology/' target="_blank" rel="noopener noreferrer">Staking UI</a> platform used by the validator nodes and delegators to stake MATIC on the Matic network.</>,
+                <>Optimized the initial rendering time of the Staking UI platform from <strong>9.5s to 1.05s (89% reduction)</strong> using Vue, Vuex and web3.js.</>,
+                <>Refactored <strong>Gas-swap</strong> and <strong>Token-swap</strong> in <a href='https://wallet.polygon.technology/' target="_blank" rel="noopener noreferrer">Wallet Suite v3</a>, also improved the decimal-UX of the dAaps</>,
+                <>Developed the <strong>login flow</strong> and added <strong>multi-wallet support</strong> in the Burn UI platform using Web3Modal and Vuex</>],
             workedWith: ['Vue.js', 'Vuex', 'Web3.js', 'TypeScript', 'SCSS']
         }
         ,
@@ -42,7 +36,12 @@ function Experience({ }: Props) {
             logo: 'credochain.png',
             logoColor: '#fff',//'#001061',
             dates: 'July 2021 - Feb. 2022',
-            work: [<>Developed an optimized <strong>Product Landing Page</strong> for their <a href='https://pemant.in/' target="_blank" rel="noopener noreferrer">PEMANT-Application</a>.</>, <>Worked with the digital marketing team & designers to improve the website SEO.</>, <>Also assisted in develpment of <strong>Underwrite Dashboard</strong> panels in improving the UX and flow of the dashboards.</>],
+            work: [
+                <>Built and shipped the <strong>product landing page</strong> for the <a href='https://pemant.in/' target="_blank" rel="noopener noreferrer">PEMANT Application</a>, a digital credit line platform for MSMEs.</>,
+                <>Worked on the <strong>admin dashboard</strong> for the underwriter team using React, Redux and React-Bootstrap.</>,
+                <>Enhanced the <strong>SEO and responsiveness</strong> of the website in conjunction with the design and digital marketing team.</>
+            ],
+            // work: [<>Developed an optimized <strong>Product Landing Page</strong> for their <a href='https://pemant.in/' target="_blank" rel="noopener noreferrer">PEMANT-Application</a>.</>, <>Worked with the digital marketing team & designers to improve the website SEO.</>, <>Also assisted in develpment of <strong>Underwrite Dashboard</strong> panels in improving the UX and flow of the dashboards.</>],
             workedWith: ['React.js', 'Redux', 'JavaScript', 'SCSS']
         }
     ]
@@ -63,7 +62,7 @@ function Experience({ }: Props) {
                                             {/* &#64; */}
                                             |
                                         </span>
-                                        <span className='company__logo-container'><Image src={`/images/${exp.logo}`} height={39} width={52} alt='logo'/></span>
+                                        <span className='company__logo-container'><Image src={`/images/${exp.logo}`} height={39} width={52} alt='logo' /></span>
                                         <span className='company__name'>{exp.company}</span>
                                     </div>
                                 </div>
