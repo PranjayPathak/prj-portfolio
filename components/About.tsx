@@ -24,7 +24,7 @@ function AboutSection({ }: Props) {
               <br />
               My goal 🎯 with every project is to provide the best functionality and user experience with a maintainable codebase in the given set of constraints.
               <br />
-              I&#39;ve had the privilege of working 👨‍💻 on dAaps scaling Ethereum and serving <strong>2.5Million+</strong> users 🚀 every month at <strong>Polygon(Matic Network)</strong>. I was also part of the dev team at <strong>Credochain</strong> solving credit line issues for Indian MSMEs.
+              I&#39;ve had the privilege of working 👨‍💻 on dApps scaling Ethereum and serving <strong>2.5Million+</strong> users 🚀 every month at <strong>Polygon(Matic Network)</strong>. I was also part of the dev team at <strong>Credochain</strong> solving credit line issues for Indian MSMEs.
               {/* Hi I am <span className="highlight">Pranjay Pathak</span> , a 22 year old <span className="highlight">web developer</span> from
               India. I am a Software Engineer graduated in 2022, currently looking for an awesome team and workplace.
               <br />
