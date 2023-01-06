@@ -16,7 +16,7 @@ function HeroSection({ }: Props) {
     loop: true,
     delaySpeed: 2000,
     typeSpeed: 70,
-    deleteSpeed: 50,
+    deleteSpeed: 70,
   });
 
   useEffect(() => {
@@ -63,7 +63,6 @@ function HeroSection({ }: Props) {
           <h3 className="typewriter label-1">
             {/* <input ref={selectText} type='text' id="selected" className="selected-text label-1" value={'a web developer based in india'} /> */}
             {/* <span style={selectedStyle.current} ref={notFocusedRef}>{typewriterText}</span> */}
-
             {typewriterText}
             <Cursor 
             cursorStyle="_" 

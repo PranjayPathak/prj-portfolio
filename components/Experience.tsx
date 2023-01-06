@@ -26,7 +26,7 @@ function Experience({ }: Props) {
                 <>Optimized the initial rendering time of the Staking UI platform from <strong>9.5s to 1.05s (89% reduction)</strong> using Vue, Vuex and web3.js.</>,
                 <>Refactored <strong>Gas-swap</strong> and <strong>Token-swap</strong> in <a href='https://wallet.polygon.technology/' target="_blank" rel="noopener noreferrer">Wallet Suite v3</a> serving over <strong>2.5 Million
                     monthly users</strong>, and also improved the decimal-UX of the dApps.</>,
-                <>Developed the <strong>login flow</strong> and added <strong>multi-wallet support</strong> in the Burn UI platform using Web3Modal and Vuex</>],
+                <>Developed the <strong>login flow</strong> and added <strong>multi-wallet support</strong> in the Burn UI platform using Web3Modal and Vuex.</>],
             workedWith: ['Vue.js', 'Vuex', 'Web3.js', 'TypeScript', 'SCSS']
         }
         ,
