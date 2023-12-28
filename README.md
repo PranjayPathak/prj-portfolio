@@ -2,7 +2,7 @@
 
 Personal Developer portfolio developed using Next.js, SCSS and powered by Vercel.
 
-### 🌐  Live at: [www.pranjay.tech](https://www.pranjay.tech/)
+### 🌐  Live at: [www.pranjay.tech](https://pranjaydevsite.vercel.app/)
 
 ## Made with
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
